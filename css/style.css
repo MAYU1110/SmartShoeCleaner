@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Orbitron:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: white;
+    padding: 1.5rem 0;
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+nav .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Orbitron', sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+nav .logo img {
+    height: 40px;
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: #4ea6ff;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #4ea6ff;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ecf0f1;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 10px rgba(78, 166, 255, 0.5);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    max-width: 800px;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.5);
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1.5rem 0;
+    backdrop-filter: blur(10px);
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+.product, .tech-feature, .about-content {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2.5rem;
+    margin: 3rem auto;
+    max-width: 1200px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: transform 0.3s ease;
+}
+
+.product:hover, .tech-feature:hover, .about-content:hover {
+    transform: translateY(-5px);
+}
+
+.product h2, .tech-feature h2, .about-content h2 {
+    color: #4ea6ff;
+    margin-bottom: 1.5rem;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+}
+
+article {
+    margin-bottom: 2rem;
+}
+
+article h3 {
+    color: #e0e0e0;
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+}
+
+.product-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.product-image:hover {
+    transform: scale(1.05);
+}
+
+main .hero:nth-child(1) {
+    background: #55d1d5;
+}
+
+main .hero:nth-child(2) {
+    background: #e4f063;
+    /* color: #000000; */
+}
+
+main .hero:nth-child(3) {
+    background: #9ddf7c;
+}
